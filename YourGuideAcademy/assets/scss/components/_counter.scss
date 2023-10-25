@@ -1,0 +1,104 @@
+/*
+************
+*************************
+15. counter
+******************************************************* 
+*************************************************************** */
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.counter {
+  &-wrap {
+    border: 1px solid rgba(30, 30, 30, 0.1);
+  }
+  &-item {
+    display: flex;
+    gap: 20px;
+    border-right: 1px solid rgba(30, 30, 30, 0.1);
+    padding-top: 25px;
+    padding-bottom: 30px;
+    justify-content: center;
+    @media #{$xs}{
+      border-right: 0;
+      border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+    }
+    @media #{$sm}{
+      border-right: 1px solid rgba(30, 30, 30, 0.1);
+      border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+    }
+  }
+  &-icon i {
+    font-size: 38px;
+    color: var(--clr-color-darkPink);
+    flex-shrink: 0;
+    display: block;
+    margin-top: 10px;
+    @media #{$lg}{
+      font-size: 30px;
+    }
+    @media #{$xs}{
+      font-size: 30px;
+    }
+  }
+  &-info {
+    &-title {
+      font-size: 55px;
+      display: flex;
+      font-weight: 600;
+      margin-bottom: 0;
+      @media #{$xl}{
+        font-size: 50px;
+      }
+      @media #{$lg}{
+        font-size: 45px;
+      }
+      @media #{$xs}{
+        font-size: 45px;
+      }
+    }
+    &-text {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #767676;
+      display: inline-block;
+      line-height: 1;
+    }
+  }
+}
+.counter-wrap {
+  .col-xl-3{
+    &:last-child {
+      .counter-item {
+          border-right: 0;
+          @media #{$xs}{
+            border-bottom: 0;
+          }
+      }
+    }
+    &:nth-child(2) {
+      .counter-item {
+          @media #{$md}{
+            border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+            border-right: 0;
+          }
+          @media #{$sm}{
+            border-right: 0;
+          }
+      }
+    }
+    &:nth-child(3) {
+      .counter-item {
+          @media #{$sm}{
+            border-bottom: 0;
+          }
+      }
+    }
+    &:first-child {
+      .counter-item {
+          @media #{$md}{
+            border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+          }
+      }
+    }
+  }
+}

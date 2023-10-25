@@ -1,0 +1,100 @@
+/*
+************
+*************************
+29. faq
+******************************************************* 
+*************************************************************** */
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.h4_faq {
+    &-img {
+        margin-right: -30px;
+        @media #{$xl}{
+            margin-right: -10px;
+        }
+        @media #{$xl, $lg, $md, $xs}{
+            margin-right: 0;
+        }
+    }
+    &-wrap {
+        margin-left: 80px;
+
+        @media #{$xl}{
+            margin-left: 30px;
+        }
+        @media #{$lg, $md, $xs}{
+            margin-left: 0;
+        }
+    }
+    &-content {
+        .accordion {
+            &-item {
+                border: none;
+                margin-bottom: 30px;
+                border-radius: 4px;
+            }
+            &-button {
+                position: relative;
+                border: 0;
+                padding-left: 25px;
+                padding-right: 60px;
+                height: 60px;
+                font-size: 18px;
+                font-weight: 500;
+                cursor: pointer;
+                box-shadow: none;
+                color: var(--clr-body-heading);
+                border-radius: 6px !important;
+                border: 1px solid rgba(10, 10, 10, 0.10);
+                background: #FFF;
+                @media #{$xs}{
+                    font-size: 16px;
+                }
+                @media #{$sm}{
+                    font-size: 18px;
+                }
+                &::after {
+                    display: none;
+                }
+                &::before {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    content: "\f107";
+                    font-family: "Font Awesome 5 Pro";
+                    padding: 0 25px;
+                    font-size: 15px;
+                    @include transition(.3s);
+                    font-weight: 400;
+                    height: 60px;
+                    line-height: 60px;
+                    color: var(--clr-body-heading);
+                }
+                &:not(.collapsed)::before {
+                    content: "\f107";
+                    transform: rotate(-180deg);
+                }
+                &:not(.collapsed) {
+                    color: var(--clr-body-heading);
+                    background: var(--clr-theme-primary-4);
+                    border-color: transparent;
+                    border-radius: 6px 6px 0 0 !important;
+
+                }
+            }
+            &-body {
+                padding: 25px 25px;
+                line-height: 1.5;
+                border: 1px solid rgba(10, 10, 10, 0.10);
+                border-top: 0;
+                border-radius: 6px;
+                p {
+                    margin-bottom: 0;
+                    font-size: 15px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

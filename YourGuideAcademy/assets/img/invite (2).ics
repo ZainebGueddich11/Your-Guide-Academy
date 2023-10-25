@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Africa/Tunis
+X-LIC-LOCATION:Africa/Tunis
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Africa/Tunis:20230920T131500
+DTEND;TZID=Africa/Tunis:20230920T141500
+DTSTAMP:20230920T120548Z
+ORGANIZER;CN=achrefhamouda1997@gmail.com:mailto:achrefhamouda1997@gmail.com
+UID:20t414b1acplrllhchidgvh30r@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=ahmedamine.jebali@edu.isetcom.tn;X-NUM-GUESTS=0:mailto:ahmedamine.j
+ ebali@edu.isetcom.tn
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=achrefhamouda1997@gmail.com;X-NUM-GUESTS=0:mailto:achrefhamouda1997@gma
+ il.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/nzd-iqbz-xyp
+X-MICROSOFT-CDO-OWNERAPPTID:-1594903249
+CREATED:20230920T120546Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/nz
+ d-iqbz-xyp\n\nLearn more about Meet at: https://support.google.com/a/users/
+ answer/9282720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230920T120546Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:meet site YGA
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
