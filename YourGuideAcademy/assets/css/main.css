@@ -14016,7 +14016,18 @@ border: 4px solid  #28347e;
   margin-left: -50px;
   background-color: #FABC40;
 }
+.filter-buttons button.active-button.presentiel{
 
+  font-size: 14px;
+  
+  padding:0px 35px ;
+  border-radius: 8px;
+  
+  border: 3px solid #FABC40;
+  background-color: #FABC40;
+  color: #fff;
+ 
+}
 
 .filter-buttons button.active-button {
 
